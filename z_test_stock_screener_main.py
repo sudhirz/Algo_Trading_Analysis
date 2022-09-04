@@ -49,16 +49,16 @@ EMA_screened_list = []
 def send_email(email_message, email_subject, attachment=None):
     msg = email.message_from_string(", ".join(email_message))
     msg = MIMEMultipart("alternative")
-    msg['From'] = 'mesudhir@gmail.com'
-    msg['To'] = 'mesudhir@gmail.com'
+    msg['From'] = 'xxxxx@gmail.com'
+    msg['To'] = 'xxxxxxxx@gmail.com'
     msg['Subject'] = email_subject
 
     if attachment != None:
         part2 = MIMEText(attachment, "html")
         msg.attach(part2)
 
-    email_from = 'mesudhir@gmail.com'
-    email_to = 'mesudhir@gmail.com'
+    email_from = 'xxxxxxxx@gmail.com'
+    email_to = 'xxxxxxxx@gmail.com'
     s = smtplib.SMTP("smtp.gmail.com", 587)
     ## for yahoo mail user: s = smtplib.SMTP("smtp.mail.yahoo.com",587)
     ## for hotmail user: s = smtplib.SMTP("smtp.live.com",587)
