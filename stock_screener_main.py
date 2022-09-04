@@ -413,7 +413,7 @@ df_expected_yearly_return = df_expected_yearly_return.sort_values(by=['yearly_re
 
 text = 'Attached is the CSV file'
 email_df_SMA = df_SMA.to_html()
-df_SMA.to_csv('C:\\SMA_History.csv', mode='a', header=False)
+df_SMA.to_csv('SMA_History.csv', mode='a', header=False)
 email_df_EMA = df_EMA.to_html()
 email_df_ADX = df_ADX.to_html()
 email_df_RSI = df_RSI.to_html()
