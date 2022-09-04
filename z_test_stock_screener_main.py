@@ -65,7 +65,7 @@ def send_email(email_message, email_subject, attachment=None):
     s.ehlo()
     s.starttls()
     s.ehlo()
-    s.login(email_from, "gqvfbxjxkggllmwv")
+    s.login(email_from, "ffgqyyvfbxjxkggllmwv")
     s.sendmail(email_from, [email_to], msg.as_string())
     s.quit()
 
@@ -185,7 +185,7 @@ def calc_obv_ema(obv):
 # for char in string.ascii_uppercase:
 #   (temp_name,temp_ticker) = scrape_stock_symbols(char)
 start_time = datetime.datetime.now()
-ticker_file = open(r"C:\Users\sudhi\Documents\Algorithmic_Trading\NYSE.txt", "r")
+ticker_file = open(r"C:NYSE.txt", "r")
 ticker_list = []
 for item in ticker_file:
     ticker = item.split()[0]
