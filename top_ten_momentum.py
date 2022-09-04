@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import yfinance as yf
 
 
-ticker_file = open(r"C:\Users\sudhi\Documents\Algorithmic_Trading\NYSE.txt","r")
+ticker_file = open(r"NYSE.txt","r")
 ticker_list = []
 for item in ticker_file:
     ticker = item.split()[0]
