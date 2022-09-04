@@ -87,7 +87,7 @@ def percent_change(close):
 # for char in string.ascii_uppercase:
 #   (temp_name,temp_ticker) = scrape_stock_symbols(char)
 start_time = datetime.now()
-ticker_file = open(r"C:\Users\sudhi\Documents\Algorithmic_Trading\NYSE.txt","r")
+ticker_file = open(r"NYSE.txt","r")
 ticker_list = []
 for item in ticker_file:
     ticker = item.split()[0]
